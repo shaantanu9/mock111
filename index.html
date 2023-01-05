@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./src/index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Ads</a></li>
+        <li><a href="./cars.html">Cars</a></li>
+        <li><a href="./wishlist.html">Wishlist</a></li>
+      </ul>
+    </nav>
+    <center>
+      <h1>List Your Car on our Platform</h1>
+    </center>
+    <div id="ads-container">
+      <form id="ads-form">
+        <label for="">Brand Of Car: </label>
+        <select name="brand" id="brand">
+          <option value="Tata">Tata</option>
+          <option value="Maruti">Maruti</option>
+          <option value="Tesla">Tesla</option>
+          <option value="BMW">BMW</option></select
+        ><br /><br />
+        <label for="">Manual/ Automatic: </label>
+        <select name="manual-automatic" id="manual-automatic">
+          <option value="">Select:</option>
+          <option value="manual">Manual</option>
+          <option value="automatic">Automatic</option></select
+        ><br /><br />
+        <label for="">Year of Purchase: </label>
+        <select name="year" id="year">
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option></select
+        ><br /><br />
+        <label for="">KM Driven: </label>
+        <input type="number" id="kmdriven" /><br /><br />
+        <label for="">Description</label>
+        <input type="text" id="des" /><br /><br />
+        <label for="">Price: </label>
+        <input type="text" id="price" /><br /><br />
+        <input type="submit" id="submit" value="Post Ad" /><br /><br />
+      </form>
+    </div>
+  </body>
+</html>

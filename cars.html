@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/cars.css" />
+    <script src="./src/cars.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Ads</a></li>
+        <li><a href="./cars.html">Cars</a></li>
+        <li><a href="./wishlist.html">Wishlist</a></li>
+      </ul>
+    </nav>
+
+    <div id="allSort">
+      <div>
+        <h3>Price</h3>
+
+        <select id="sortByPrice" onchange="sortPrice()">
+          <option id="select" value="">--Select--</option>
+          <option id="high" value="dsc">High to Low</option>
+          <option id="low" value="asc">Low to High</option>
+        </select>
+      </div>
+      <div>
+        <h3>Km Driven</h3>
+
+        <select id="sortBykms" onchange="sortKms()">
+          <option id="select" value="">--Select--</option>
+
+          <option id="kmhigh" value="dsc">Highest</option>
+          <option id="kmlow" value="asc">Lowest</option>
+        </select>
+      </div>
+
+      <div>
+        <h3>Brand Name</h3>
+        <select id="filterByBrand" onchange="filterByBrand()">
+          <option id="select" value="">--Select--</option>
+          <option value="Tata">Tata</option>
+          <option value="Maruti">Maruti</option>
+          <option value="Tesla">Tesla</option>
+          <option value="BMW">BMW</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="cars-container"></div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="ads-form">
+          <label for="">Brand Of Car: </label>
+          <select name="brand" id="brand">
+            <option value="Tata">Tata</option>
+            <option value="Maruti">Maruti</option>
+            <option value="Tesla">Tesla</option>
+            <option value="BMW">BMW</option>
+          </select>
+          <br /><br />
+          <label for="">Manual/ Automatic: </label>
+          <select name="manual-automatic" id="manual-automatic">
+            <option value="">Select:</option>
+            <option value="manual">Manual</option>
+            <option value="automatic">Automatic</option></select
+          ><br /><br />
+          <label for="">Year of Purchase: </label>
+          <select name="year" id="year">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option></select
+          ><br /><br />
+          <label for="">KM Driven: </label>
+          <input type="number" id="kmdriven" /><br /><br />
+          <label for="">Description</label>
+          <input type="text" id="des" /><br /><br />
+          <label for="">Price: </label>
+          <input type="text" id="price" /><br /><br />
+          <input type="submit" id="submit" value="Post Ad" /><br /><br />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
